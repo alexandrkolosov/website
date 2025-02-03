@@ -8,36 +8,36 @@ import { Heading, Lead, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Company',
+  title: 'YoYo Mobility - Smart Corporate Travel',
   description:
-    'We’re on a mission to transform revenue organizations by harnessing vast amounts of illegally acquired customer data.',
+    'YoYo Mobility is revolutionizing corporate travel with an AI-driven, all-in-one platform that optimizes costs, reduces carbon footprints, and simplifies employee mobility. Connect taxis, public transport, car-sharing, and micro-mobility in one seamless experience.',
 }
 
 function Header() {
   return (
     <Container className="mt-16">
-      <Heading as="h1">Helping companies generate revenue.</Heading>
+      <Heading as="h1">Helping Businesses Move Smarter</Heading>
       <Lead className="mt-6 max-w-3xl">
-        We’re on a mission to transform revenue organizations by harnessing vast
-        amounts of illegally acquired customer data.
+        We’re on a mission to transform corporate mobility by providing
+        intelligent, cost-effective, and sustainable travel solutions.
       </Lead>
       <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-12">
         <div className="max-w-lg">
           <h2 className="text-2xl font-medium tracking-tight">Our mission</h2>
           <p className="mt-6 text-sm/6 text-gray-600">
-            At Radiant, we are dedicated to transforming the way revenue
-            organizations source and close deals. Our mission is to provide our
-            customers with an unfair advantage over both their competitors and
-            potential customers through insight and analysis. We’ll stop at
-            nothing to get you the data you need to close a deal.
+            At YoYo Mobility, we believe that business travel should be
+            seamless, cost-efficient, and environmentally responsible. Our
+            mission is to empower companies with a unified platform that
+            connects taxis, public transport, ride-hailing, car-sharing,
+            and micro-mobility into a single, AI-driven experience.
           </p>
           <p className="mt-8 text-sm/6 text-gray-600">
-            We’re customer-obsessed — putting the time in to build a detailed
-            financial picture of every one of our customers so that we know more
-            about your business than you do. We are in this together, mostly
-            because we are all implicated in large-scale financial crime. In our
-            history as a company, we’ve never lost a customer, because if any
-            one of us talks, we all go down.
+            We are committed to reducing travel costs through optimized route
+            planning, simplifying employee mobility, and minimizing carbon
+            footprints with eco-friendly route suggestions and carbon tracking.
+            With YoYo Mobility, businesses can streamline their travel policies,
+            optimize fleet operations, and integrate sustainable transport
+            solutions effortlessly.
           </p>
         </div>
         <div className="pt-20 lg:row-span-2 lg:-mr-16 xl:mr-auto">
@@ -77,27 +77,27 @@ function Header() {
           <hr className="mt-6 border-t border-gray-200" />
           <dl className="mt-6 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
             <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
-              <dt className="text-sm/6 text-gray-600">Raised</dt>
+              <dt className="text-sm/6 text-gray-600">Total Number of Rides</dt>
               <dd className="order-first text-6xl font-medium tracking-tight">
-                $<AnimatedNumber start={100} end={150} />M
+                <AnimatedNumber start={700} end={853} />K
               </dd>
             </div>
             <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
-              <dt className="text-sm/6 text-gray-600">Companies</dt>
+              <dt className="text-sm/6 text-gray-600">Companies Using YoYo</dt>
               <dd className="order-first text-6xl font-medium tracking-tight">
-                <AnimatedNumber start={15} end={30} />K
+                <AnimatedNumber start={190} end={226} />
               </dd>
             </div>
             <div className="flex flex-col gap-y-2 max-sm:border-b max-sm:border-dotted max-sm:border-gray-200 max-sm:pb-4">
-              <dt className="text-sm/6 text-gray-600">Deals Closed</dt>
+              <dt className="text-sm/6 text-gray-600">Partners</dt>
               <dd className="order-first text-6xl font-medium tracking-tight">
-                <AnimatedNumber start={0.9} end={1.5} decimals={1} />M
+                <AnimatedNumber start={3} end={15} />
               </dd>
             </div>
             <div className="flex flex-col gap-y-2">
-              <dt className="text-sm/6 text-gray-600">Leads Generated</dt>
+              <dt className="text-sm/6 text-gray-600">Carbon Footprint Reduced</dt>
               <dd className="order-first text-6xl font-medium tracking-tight">
-                <AnimatedNumber start={150} end={200} />M
+                <AnimatedNumber start={150} end={200} />K Tons
               </dd>
             </div>
           </dl>
@@ -135,26 +135,25 @@ function Team() {
         Founded by an all-star team.
       </Heading>
       <Lead className="mt-6 max-w-3xl">
-        Radiant is founded by two of the best sellers in the business and backed
-        by investors who look the other way.
+        YoYo is founded by three of the best professionals in the industry and backed
+        by lead investors who look the other way.
       </Lead>
       <div className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-2">
         <div className="max-w-lg">
           <p className="text-sm/6 text-gray-600">
-            Years ago, while working as sales associates at rival companies,
-            Thomas, Ben, and Natalie were discussing a big client they had all
-            been competing for. Joking about seeing the terms of each other’s
-            offers, they had an idea: what if they shared data to win deals and
-            split the commission behind their companies’ backs? It turned out to
-            be an incredible success, and that idea became the kernel for
-            Radiant.
+            Years ago, while working in the mobility and transportation industry,
+            Alexey, Stanislav, and Alexander noticed a recurring issue—companies were
+            struggling to manage their corporate travel efficiently. Businesses had
+            to juggle multiple mobility providers, lacked transparent pricing, and
+            faced increasing costs without proper optimization. They saw an opportunity
+            to simplify and centralize corporate mobility under one intelligent platform.
           </p>
           <p className="mt-8 text-sm/6 text-gray-600">
-            Today, Radiant transforms revenue organizations by harnessing
-            illegally acquired customer and competitor data, using it to provide
-            extraordinary leverage. More than 30,000 companies rely on Radiant
-            to undercut their competitors and extort their customers, all
-            through a single integrated platform.
+            Today, YoYo Mobility is transforming corporate travel by integrating
+            taxis, public transport, ride-hailing, car-sharing, and micro-mobility into
+            a single AI-powered solution. More than 250 companies with 800+ thousands rides annualy rely on YoYo Mobility
+            to streamline their travel policies, reduce costs, and optimize their carbon
+            footprint—all through one seamless, easy-to-use platform.
           </p>
           <div className="mt-6">
             <Button className="w-full sm:w-auto" href="#">
@@ -181,13 +180,13 @@ function Team() {
         className="mx-auto mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
       >
         <Person
-          name="Michael Foster"
-          description="Co-Founder / CTO"
+          name="Alexey Kotelkov"
+          description="Co-Founder / CEO"
           img="/team/michael-foster.jpg"
         />
         <Person
-          name="Dries Vincent"
-          description="Business Relations"
+          name="Alexander Kolosov"
+          description="Co-Founder / CPO"
           img="/team/dries-vincent.jpg"
         />
         <Person
@@ -230,7 +229,7 @@ function Team() {
   )
 }
 
-function Investors() {
+/*  function Investors() {
   return (
     <Container className="mt-32">
       <Subheading>Investors</Subheading>
@@ -238,8 +237,7 @@ function Investors() {
         Funded by industry-leaders.
       </Heading>
       <Lead className="mt-6 max-w-3xl">
-        We are fortunate to be backed by the best investors in the industry —
-        both literal and metaphorical partners in crime.
+        We are fortunate to be backed by the best investors in the industry.
       </Lead>
       <Subheading as="h3" className="mt-24">
         Venture Capital
@@ -316,7 +314,7 @@ function Investors() {
     </Container>
   )
 }
-
+ */
 function Testimonial() {
   return (
     <div className="relative flex aspect-square flex-col justify-end overflow-hidden rounded-3xl sm:aspect-5/4 lg:aspect-3/4">
@@ -332,15 +330,14 @@ function Testimonial() {
       <figure className="relative p-10">
         <blockquote>
           <p className="relative text-xl/7 text-white before:absolute before:-translate-x-full before:content-['“'] after:absolute after:content-['”']">
-            We&apos;ve managed to put two of our main competitors out of
-            business in 6 months.
+            This is the best company to work in. I&apos;m really happy being the part of our amazing team!
           </p>
         </blockquote>
         <figcaption className="mt-6 border-t border-white/20 pt-6">
-          <p className="text-sm/6 font-medium text-white">Veronica Winton</p>
+          <p className="text-sm/6 font-medium text-white">Amand Garnier</p>
           <p className="text-sm/6 font-medium">
             <span className="bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent">
-              CSO, Planeteria
+              Backend Developer, Engeneering
             </span>
           </p>
         </figcaption>
@@ -390,7 +387,7 @@ function Careers() {
                   <td className="px-0 py-4 text-gray-600">Remote</td>
                   <td className="px-0 py-4 text-right">
                     <Button variant="outline" href="#">
-                      View listing
+                      Apply
                     </Button>
                   </td>
                 </tr>
@@ -399,7 +396,7 @@ function Careers() {
                   <td className="px-0 py-4 text-gray-600">Remote</td>
                   <td className="px-0 py-4 text-right">
                     <Button variant="outline" href="#">
-                      View listing
+                      Apply
                     </Button>
                   </td>
                 </tr>
@@ -408,44 +405,11 @@ function Careers() {
                   <td className="px-0 py-4 text-gray-600">Remote</td>
                   <td className="px-0 py-4 text-right">
                     <Button variant="outline" href="#">
-                      View listing
+                      Apply
                     </Button>
                   </td>
                 </tr>
-                <tr>
-                  <th scope="colgroup" colSpan={3} className="px-0 pt-5 pb-0">
-                    <div className="-mx-4 rounded-lg bg-gray-50 px-4 py-3 text-sm/6 font-semibold">
-                      Design
-                    </div>
-                  </th>
-                </tr>
-                <tr className="border-b border-dotted border-gray-200 text-sm/6 font-normal">
-                  <td className="px-0 py-4">Principal Designer</td>
-                  <td className="px-0 py-4 text-gray-600">Remote</td>
-                  <td className="px-0 py-4 text-right">
-                    <Button variant="outline" href="#">
-                      View listing
-                    </Button>
-                  </td>
-                </tr>
-                <tr className="border-b border-dotted border-gray-200 text-sm/6 font-normal">
-                  <td className="px-0 py-4">Designer</td>
-                  <td className="px-0 py-4 text-gray-600">Remote</td>
-                  <td className="px-0 py-4 text-right">
-                    <Button variant="outline" href="#">
-                      View listing
-                    </Button>
-                  </td>
-                </tr>
-                <tr className="text-sm/6 font-normal">
-                  <td className="px-0 py-4">Senior Designer</td>
-                  <td className="px-0 py-4 text-gray-600">Remote</td>
-                  <td className="px-0 py-4 text-right">
-                    <Button variant="outline" href="#">
-                      View listing
-                    </Button>
-                  </td>
-                </tr>
+
               </tbody>
             </table>
           </div>
@@ -465,7 +429,6 @@ export default function Company() {
       </Container>
       <Header />
       <Team />
-      <Investors />
       <Careers />
       <Footer />
     </main>

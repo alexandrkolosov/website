@@ -5,7 +5,7 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from '@headlessui/react'
-import { Bars2Icon } from '@heroicons/react/24/solid'
+import { CustomBarsIcon } from './custombar'
 import { motion } from 'framer-motion'
 import { Link } from './link'
 import { Logo } from './logo'
@@ -13,9 +13,9 @@ import { Mark } from './logo';
 import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid'
 
 const links = [
-  { href: '/pricing', label: 'Pricing' },
+  { href: '/pricing', label: 'FAQ' },
   { href: '/company', label: 'Company' },
-  { href: '/blog', label: 'Blog' },
+  { href: '/blog', label: 'News' },
   { href: '/login', label: 'Login' },
 ]
 
@@ -42,7 +42,7 @@ function MobileNavButton() {
       className="flex size-12 items-center justify-center self-center rounded-lg data-hover:bg-black/5 lg:hidden"
       aria-label="Open main menu"
     >
-      <Bars2Icon className="size-6" />
+      <CustomBarsIcon className="size-6" />
     </DisclosureButton>
   )
 }

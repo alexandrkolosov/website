@@ -15,9 +15,9 @@ import {
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Pricing',
+  title: 'FAQ - YoYo Mobility',
   description:
-    'Companies all over the world have closed millions of deals with Radiant. Sign up today and start selling smarter.',
+    'Find answers to common questions about YoYo Mobility. Learn how our AI-powered platform helps businesses optimize travel costs, reduce carbon footprints, and streamline corporate mobility.',
 }
 
 const tiers = [
@@ -110,12 +110,53 @@ const tiers = [
 function Header() {
   return (
     <Container className="mt-16">
-      <Heading as="h1">Pricing that grows with your team size.</Heading>
+      <Heading as="h1">Frequently Asked Questions</Heading>
       <Lead className="mt-6 max-w-3xl">
-        Companies all over the world have closed millions of deals with Radiant.
-        Sign up today and start selling smarter.
+        Explore our FAQ section to find clear answers to common questions about YoYo Mobility—discover how our AI-powered platform streamlines corporate travel, reduces costs, and optimizes efficiency.
       </Lead>
     </Container>
+  )
+}
+
+
+function Testimonial() {
+  return (
+    <div className="mx-2 my-24 rounded-4xl bg-gray-900 bg-[url(/dot-texture.svg)] pt-72 pb-24 lg:pt-36">
+      <Container>
+        <div className="grid grid-cols-1 lg:grid-cols-[384px_1fr_1fr]">
+          <div className="-mt-96 lg:-mt-52">
+            <div className="-m-2 rounded-4xl bg-white/15 ring-1 shadow-[inset_0_0_2px_1px_#ffffff4d] ring-black/5 max-lg:mx-auto max-lg:max-w-xs">
+              <div className="rounded-4xl p-2 shadow-md shadow-black/5">
+                <div className="overflow-hidden rounded-3xl shadow-2xl outline outline-1 -outline-offset-1 outline-black/10">
+                  <img
+                    alt=""
+                    src="/testimonials/tina-yards.jpg"
+                    className="aspect-3/4 w-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex max-lg:mt-16 lg:col-span-2 lg:px-16">
+            <figure className="mx-auto flex max-w-xl flex-col gap-16 max-lg:text-center">
+              <blockquote>
+                <p className="relative text-3xl tracking-tight text-white before:absolute before:-translate-x-full before:content-['“'] after:absolute after:content-['”'] lg:text-4xl">
+                  Find clear answers to your most common questions about YoYo Mobility—an innovative platform designed to streamline corporate travel, reduce costs, and boost efficiency.
+                </p>
+              </blockquote>
+              <figcaption className="mt-auto">
+                <p className="text-sm/6 font-medium text-white">Svetlana Butova</p>
+                <p className="text-sm/6 font-medium">
+                  <span className="bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent">
+                    VP of Client Support
+                  </span>
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </Container>
+    </div>
   )
 }
 
@@ -365,54 +406,13 @@ function PlusIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-function Testimonial() {
-  return (
-    <div className="mx-2 my-24 rounded-4xl bg-gray-900 bg-[url(/dot-texture.svg)] pt-72 pb-24 lg:pt-36">
-      <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-[384px_1fr_1fr]">
-          <div className="-mt-96 lg:-mt-52">
-            <div className="-m-2 rounded-4xl bg-white/15 ring-1 shadow-[inset_0_0_2px_1px_#ffffff4d] ring-black/5 max-lg:mx-auto max-lg:max-w-xs">
-              <div className="rounded-4xl p-2 shadow-md shadow-black/5">
-                <div className="overflow-hidden rounded-3xl shadow-2xl outline outline-1 -outline-offset-1 outline-black/10">
-                  <img
-                    alt=""
-                    src="/testimonials/tina-yards.jpg"
-                    className="aspect-3/4 w-full object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex max-lg:mt-16 lg:col-span-2 lg:px-16">
-            <figure className="mx-auto flex max-w-xl flex-col gap-16 max-lg:text-center">
-              <blockquote>
-                <p className="relative text-3xl tracking-tight text-white before:absolute before:-translate-x-full before:content-['“'] after:absolute after:content-['”'] lg:text-4xl">
-                  Thanks to Radiant, we&apos;re finding new leads that we never
-                  would have found with legal methods.
-                </p>
-              </blockquote>
-              <figcaption className="mt-auto">
-                <p className="text-sm/6 font-medium text-white">Tina Yards</p>
-                <p className="text-sm/6 font-medium">
-                  <span className="bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent">
-                    VP of Sales, Protocol
-                  </span>
-                </p>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </Container>
-    </div>
-  )
-}
 
 function FrequentlyAskedQuestions() {
   return (
     <Container>
       <section id="faqs" className="scroll-mt-8">
         <Subheading className="text-center">
-          Frequently asked questions
+          Frequently Asked Questions
         </Subheading>
         <Heading as="div" className="mt-2 text-center">
           Your questions answered.
@@ -420,67 +420,88 @@ function FrequentlyAskedQuestions() {
         <div className="mx-auto mt-16 mb-32 max-w-xl space-y-12">
           <dl>
             <dt className="text-sm font-semibold">
-              What measures are in place to ensure the security of our data?
+              What is YoYo Mobility?
             </dt>
             <dd className="mt-4 text-sm/6 text-gray-600">
-              Data security is a top priority for us, which is ironic given that
-              our business depends on others not taking it very seriously. We
-              understand that any breach could put both us and most of our
-              customers out of business—and behind bars. We employ robust
-              security measures, including data encryption, secure data centers,
-              and regular security audits to ensure this never happens.
+              YoYo Mobility is an AI-powered corporate travel management platform
+              that integrates multiple ground transport options—public transit,
+              taxis, ride-hailing, car-sharing, and micro-mobility—into a single,
+              seamless solution. We help businesses optimize travel costs, improve
+              sustainability, and enhance employee mobility.
             </dd>
           </dl>
           <dl>
             <dt className="text-sm font-semibold">
-              Is there a mobile app available for your platform?
+              How does YoYo Mobility help businesses reduce travel costs?
             </dt>
             <dd className="mt-4 text-sm/6 text-gray-600">
-              Yes, we offer a mobile app that provides all the key
-              functionalities of our desktop platform, allowing sales reps to
-              manage deals on the go. Additionally, we have another app
-              pre-installed on most modern smartphones that allows us to track
-              your location, listen to your conversations, and access your
-              camera and microphone at any time. This app is not available for
-              download.
+              Our platform optimizes travel expenses through AI-powered route
+              planning, dynamic pricing management, and corporate mobility policies.
+              Businesses can save up to 25% by leveraging cost-effective transport
+              options, avoiding surge pricing, and setting budget controls for employees.
             </dd>
           </dl>
           <dl>
             <dt className="text-sm font-semibold">
-              Can I customize the workflow to match our company’s deal process?
+              Does YoYo Mobility support carbon footprint tracking?
             </dt>
             <dd className="mt-4 text-sm/6 text-gray-600">
-              Yes, our platform is highly customizable, although there should be
-              no need. Before you sign up, we discreetly gather information
-              about your company and its processes from a variety of sources. We
-              then use this information to pre-configure the platform to match
-              your existing workflows. This is why we ask for your social
-              security number and access to your email account during the
-              sign-up process.
+              Yes! Our CO2 tracker provides real-time insights into the environmental
+              impact of your corporate travel. Businesses can set sustainability goals,
+              encourage eco-friendly commuting, and generate reports aligned with ESG
+              compliance.
             </dd>
           </dl>
           <dl>
             <dt className="text-sm font-semibold">
-              What kind of support do you offer?
+              What transport services are integrated into YoYo Mobility?
             </dt>
             <dd className="mt-4 text-sm/6 text-gray-600">
-              We offer comprehensive support through multiple channels,
-              including 24/7 live chat, email, and phone support. However, since
-              we have full access to your internal network, we will know if
-              you’re having issues before you do.
+              YoYo Mobility connects businesses with a wide range of mobility services,
+              including public transportation, ride-hailing (Uber, Bolt), car-sharing,
+              e-scooters, bike rentals, and corporate fleet management. Our platform
+              continuously expands to include more local and international providers.
             </dd>
           </dl>
           <dl>
             <dt className="text-sm font-semibold">
-              Can I integrate the CRM with other sales intelligence tools?
+              Can I set travel policies and spending limits for my employees?
             </dt>
             <dd className="mt-4 text-sm/6 text-gray-600">
-              Yes, our solution integrates seamlessly with a variety of other
-              systems. However, be warned that most of these integrations are
-              short-lived. We have a dedicated team of engineers who
-              reverse-engineer the APIs of other tools, enabling us to build
-              their functionality into our product and eventually put them out
-              of business.
+              Yes, companies can create custom travel policies, set budget limits,
+              restrict specific transport modes, and define approved routes for employees.
+              Our platform ensures compliance with corporate travel guidelines while
+              providing flexibility for employees.
+            </dd>
+          </dl>
+          <dl>
+            <dt className="text-sm font-semibold">
+              Is YoYo Mobility available on mobile?
+            </dt>
+            <dd className="mt-4 text-sm/6 text-gray-600">
+              Absolutely! Our mobile app is available for iOS and Android, allowing
+              employees to book, manage, and track their trips on the go. The app
+              provides real-time notifications, route suggestions, and expense tracking.
+            </dd>
+          </dl>
+          <dl>
+            <dt className="text-sm font-semibold">
+              How does YoYo Mobility integrate with existing business systems?
+            </dt>
+            <dd className="mt-4 text-sm/6 text-gray-600">
+              Our platform offers seamless API integrations with corporate ERP, HR,
+              and travel management systems. Businesses can automate expense tracking,
+              sync employee data, and manage mobility policies effortlessly.
+            </dd>
+          </dl>
+          <dl>
+            <dt className="text-sm font-semibold">
+              What kind of customer support does YoYo Mobility offer?
+            </dt>
+            <dd className="mt-4 text-sm/6 text-gray-600">
+              We provide 24/7 customer support via live chat, email, and phone.
+              Our dedicated account managers ensure that businesses receive
+              personalized assistance and smooth implementation.
             </dd>
           </dl>
         </div>
@@ -498,6 +519,8 @@ export default function Pricing({
     typeof searchParams.tier === 'string'
       ? tiers.find(({ slug }) => slug === searchParams.tier)!
       : tiers[0]
+  const showPricing = false; // Set this to true to show pricing
+
 
   return (
     <main className="overflow-hidden">
@@ -506,10 +529,14 @@ export default function Pricing({
         <Navbar />
       </Container>
       <Header />
-      <PricingCards />
-      <PricingTable selectedTier={tier} />
       <Testimonial />
       <FrequentlyAskedQuestions />
+      {showPricing && (
+        <>
+          <PricingCards />
+          <PricingTable selectedTier={tier} />
+        </>
+      )}
       <Footer />
     </main>
   )

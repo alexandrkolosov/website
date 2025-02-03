@@ -1,3 +1,6 @@
+'use client'
+
+import { useState } from 'react'
 import { BentoCard } from '@/components/bento-card'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
@@ -15,14 +18,14 @@ import { Screenshot } from '@/components/screenshot'
 import { Testimonials } from '@/components/testimonials'
 import { Heading, Subheading } from '@/components/text'
 import { ChevronRightIcon } from '@heroicons/react/16/solid'
+import { Modal } from '@/components/modal'
+
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  description:
-    'YoYo Mobility helps your company to use different kinds of transportation means globally.',
-}
+
 
 function Hero() {
+  const [isModalOpen, setModalOpen] = useState(false)
   return (
     <div className="relative">
       <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-black/5 ring-inset" />
@@ -46,13 +49,14 @@ function Hero() {
               All Your Ground Transport in One Intelligent, AI-Driven Platform
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="#">Get started</Button>
+            <Button onClick={() => setModalOpen(true)}>Get started</Button>
             <Button variant="secondary" href="/pricing">
               Learn More
             </Button>
           </div>
         </div>
       </Container>
+      <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
     </div>
   )
 }
