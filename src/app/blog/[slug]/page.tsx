@@ -6,12 +6,13 @@ import { Link } from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
 import { image } from '@/sanity/image'
-import {getPost, getPosts} from '@/sanity/queries'
+import { getPost, getPosts, getPostsCount } from '@/sanity/queries'
 import { ChevronLeftIcon } from '@heroicons/react/16/solid'
 import dayjs from 'dayjs'
 import type { Metadata } from 'next'
 import { PortableText } from 'next-sanity'
 import { notFound } from 'next/navigation'
+
 
 type Post = {
   title: string | null;
@@ -22,11 +23,28 @@ type Post = {
 };
 
 export async function generateStaticParams() {
-  const posts: Post[] = await getPosts(0, 1000);
-  console.log("Fetched posts from getPosts:", posts);
-  return posts
-      .filter((post) => post.slug !== null)
-      .map((post) => ({ slug: post.slug! }));
+  try {
+    // First get the total count of posts
+    const totalPosts = await getPostsCount();
+
+    // Get all posts in one query (0 to total count)
+    const posts = await getPosts(0, totalPosts);
+
+    // Log for debugging
+    console.log(`Generating static params for ${posts.length} posts`);
+
+    const params = posts
+      .filter(post => post.slug)
+      .map(post => ({
+        slug: post.slug,
+      }));
+
+    console.log('Generated params:', params);
+    return params;
+  } catch (error) {
+    console.error('Error in generateStaticParams:', error);
+    return [];
+  }
 }
 
 export async function generateMetadata({

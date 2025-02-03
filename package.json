@@ -2,7 +2,7 @@
   "name": "radiant",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alexandrkolosov.github.io/tailwindui-radiant-yoyo",
+  "homepage": "https://github.com/alexandrkolosov/website.git",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
