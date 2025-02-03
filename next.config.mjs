@@ -1,18 +1,9 @@
-/** @type {import('next').NextConfig} */
+// next.config.mjs
 const nextConfig = {
-    output: 'export',
-    images: {
-        unoptimized: true,
-        remotePatterns: [
-            {
-                protocol: 'https',
-                hostname: 'cdn.sanity.io',
-                pathname: '**',
-            },
-        ],
-    },
-    // Add this if you need to specify a base path for GitHub Pages
-    // basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
+    // Remove or comment out this line if present:
+    // output: 'export',
+
+    // ...other configuration options
 };
 
 export default nextConfig;
