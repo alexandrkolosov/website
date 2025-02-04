@@ -101,39 +101,39 @@ export function LogoCluster() {
     <div aria-hidden="true" className="relative h-full overflow-hidden">
       <Circles />
       <div className="absolute left-1/2 h-full w-[26rem] -translate-x-1/2">
-        <MainLogo />
+
         <Logo
-          src="/assets/bolt.png"
+          src="/assets/bike.png"
           left={360}
           top={144}
           hover={{ x: 6, y: 1, rotate: 5, delay: 0.38 }}
         />
         <Logo
-          src="/assets/sncf.png"
+          src="/assets/bus.png"
           left={285}
           top={20}
           hover={{ x: 4, y: -5, rotate: 6, delay: 0.3 }}
         />
         <Logo
-          src="/assets/uber.png"
+          src="/assets/train.png"
           left={255}
           top={210}
           hover={{ x: 3, y: 5, rotate: 7, delay: 0.2 }}
         />
         <Logo
-          src="/assets/velib.png"
+          src="/assets/taxi.png"
           left={144}
           top={40}
           hover={{ x: -2, y: -5, rotate: -6, delay: 0.15 }}
         />
         <Logo
-          src="/assets/lime.png"
+          src="/assets/scooter.png"
           left={36}
           top={56}
           hover={{ x: -4, y: -5, rotate: -6, delay: 0.35 }}
         />
         <Logo
-          src="/assets/lecab.png"
+          src="/assets/sharing.png"
           left={96}
           top={176}
           hover={{ x: -3, y: 5, rotate: 3, delay: 0.15 }}

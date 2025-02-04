@@ -19,6 +19,7 @@ import { Testimonials } from '@/components/testimonials'
 import { Heading, Subheading } from '@/components/text'
 import { ChevronRightIcon } from '@heroicons/react/16/solid'
 import { Modal } from '@/components/modal'
+import { InsightSvg } from '@/components/InsightSvg'
 
 import type { Metadata } from 'next'
 
@@ -93,7 +94,7 @@ function BentoSection() {
           title="Unified Mobility Platform"
           description="Experience door‑to‑door journey planning with access to public transport, ride‑hailing, car sharing, micro‑mobility, and chauffeur services—all in one place."
           graphic={
-            <div className="h-80 bg-[url(/screenshots/profile.png)] bg-[size:1000px_560px] bg-[left_-109px_top_-112px] bg-no-repeat" />
+            <div className="h-80 bg-[url(/screenshots/mobility_platform.png)] bg-[size:1000px_560px] bg-[left_-109px_top_-112px] bg-no-repeat" />
           }
           fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
@@ -103,7 +104,7 @@ function BentoSection() {
           title="Smart Travel Cost Optimization"
           description="Leverage dynamic fare management and budget reporting to reduce travel expenses by up to 25%. Avoid surge pricing and streamline your corporate travel policies."
           graphic={
-            <div className="absolute inset-0 bg-[url(/screenshots/competitors.png)] bg-[size:1100px_650px] bg-[left_-38px_top_-73px] bg-no-repeat" />
+            <div className="absolute inset-0 bg-[url(/screenshots/travel_costs.png)] bg-[size:1100px_650px] bg-[left_-38px_top_-73px] bg-no-repeat" />
           }
           fade={['bottom']}
           className="lg:col-span-3 lg:rounded-tr-4xl"
