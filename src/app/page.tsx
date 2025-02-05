@@ -34,10 +34,10 @@ function Hero() {
         <Navbar
           banner={
             <Link
-              href="/blog/radiant-raises-100m-series-a-from-tailwind-ventures"
+              href="#"
               className="flex items-center gap-1 rounded-full bg-fuchsia-950/35 px-3 py-0.5 text-sm/6 font-medium text-white data-hover:bg-fuchsia-950/30"
             >
-              YoYo Mobility starts in France
+              YoYo Mobility starts in France SOON
               <ChevronRightIcon className="size-4" />
             </Link>
           }
@@ -72,7 +72,7 @@ function FeatureSection() {
         <Screenshot
           width={1216}
           height={768}
-          src="/screenshots/app.png"
+          src="/screenshots/frame.png"
           className="mt-16 h-[36rem] sm:h-auto sm:w-[76rem]"
         />
       </Container>
@@ -94,7 +94,7 @@ function BentoSection() {
           title="Unified Mobility Platform"
           description="Experience door‑to‑door journey planning with access to public transport, ride‑hailing, car sharing, micro‑mobility, and chauffeur services—all in one place."
           graphic={
-            <div className="h-80 bg-[url(/screenshots/mobility_platform.png)] bg-[size:1000px_560px] bg-[left_-109px_top_-112px] bg-no-repeat" />
+            <div className="h-80 bg-[url(/screenshots/mobility_platform.png)] bg-[size:1000px_560px] bg-[left_-89px_top_-92px] bg-no-repeat" />
           }
           fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
@@ -104,15 +104,15 @@ function BentoSection() {
           title="Smart Travel Cost Optimization"
           description="Leverage dynamic fare management and budget reporting to reduce travel expenses by up to 25%. Avoid surge pricing and streamline your corporate travel policies."
           graphic={
-            <div className="absolute inset-0 bg-[url(/screenshots/travel_costs.png)] bg-[size:1100px_650px] bg-[left_-38px_top_-73px] bg-no-repeat" />
+            <div className="absolute inset-0 bg-[url(/screenshots/cost_opt.png)] bg-[size:1100px_650px] bg-no-repeat" />
           }
           fade={['bottom']}
           className="lg:col-span-3 lg:rounded-tr-4xl"
         />
         <BentoCard
-          eyebrow="Smart"
-          title="AI-Powered Route Optimization"
-          description="Our intelligent journey planner factors in cost, duration, user preferences, and environmental impact. Track your carbon footprint in real time to support your ESG initiatives."
+          eyebrow="Always"
+          title="Corporate Travel at Your Fingertips"
+          description="Seamless, smart, and always ready—YoYo Mobility is at your disposal 24/7. Just like your keyboard, our AI-powered platform is always within reach, making corporate travel management effortless, efficient, and tailored to your needs."
           graphic={
             <div className="flex size-full pt-10 pl-10">
               <Keyboard highlighted={['LeftCommand', 'LeftShift', 'D']} />
@@ -122,15 +122,15 @@ function BentoSection() {
         />
         <BentoCard
           eyebrow="Multimodality"
-          title="Administrative Control & Compliance"
-          description="Maintain full control with centralized policy management, multi-tier user access, automated invoicing, and GDPR‑compliant data practices."
+          title="AI-Powered Route Optimization"
+          description="Our intelligent journey planner factors in cost, duration, user preferences, and environmental impact. Track your carbon footprint in real time to support your ESG initiatives."
           graphic={<LogoCluster />}
           className="lg:col-span-2"
         />
         <BentoCard
-          eyebrow="Everything"
-          title="Fleet & Corporate Mobility Management"
-          description="Integrate your corporate fleet with IoT-enabled tracking and optimize route planning, maintenance, and scalability through subscription and commission-based models."
+          eyebrow="We Are Global"
+          title="Global Travelling All Over the World"
+          description="Wherever business takes you, YoYo Mobility keeps you connected. Our platform integrates mobility services across the globe, ensuring seamless travel, optimized routes, and cost-effective solutions—no matter where you are."
           graphic={<Map />}
           className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
         />
@@ -155,7 +155,7 @@ function DarkBentoSection() {
             title="Seamless Integrations"
             description="Connect with your existing ERP, HR, and travel management systems via our secure APIs."
             graphic={
-              <div className="h-80 bg-[url(/screenshots/networking.png)] bg-[size:851px_344px] bg-no-repeat" />
+              <div className="h-80 bg-[url(/screenshots/cutting_edge.png)] bg-[size:851px_344px] bg-no-repeat" />
             }
             fade={['top']}
             className="max-lg:rounded-t-4xl lg:col-span-4 lg:rounded-tl-4xl"
@@ -163,19 +163,21 @@ function DarkBentoSection() {
 
           <BentoCard
             dark
-            eyebrow="EDGE"
-            title="AI & IoT"
-            description="Experience the power of AI-driven route optimization combined with IoT‑enabled fleet tracking for optimal travel management."
-            graphic={<LinkedAvatars />}
-            className="lg:col-span-2 lg:rounded-bl-4xl"
-          />
-          <BentoCard
-            dark
             eyebrow="Everywhere"
             title="Cross‑Platform & Real‑Time Analytics"
             description="Monitor travel data and performance 24/7. Available on iOS, Android, and Web."
             graphic={
-              <div className="h-80 bg-[url(/screenshots/engagement.png)] bg-[size:851px_344px] bg-no-repeat" />
+              <div className="h-80 bg-[url(/screenshots/cross_platform.png)] bg-[size:451px_340px] bg-no-repeat" />
+            }
+            className="lg:col-span-2 lg:rounded-bl-4xl"
+          />
+          <BentoCard
+            dark
+            eyebrow="On the Edge"
+            title="AI & IoT "
+            description="Experience the power of AI-driven route optimization combined with IoT‑enabled fleet tracking for optimal travel management."
+            graphic={
+              <div className="h-80 bg-[url(/screenshots/edge.png)] bg-[size:551px_244px] bg-no-repeat bg-center rounded-xl overflow-hidden" />
             }
             fade={['top']}
             className="max-lg:rounded-b-4xl lg:col-span-4 lg:rounded-br-4xl"
