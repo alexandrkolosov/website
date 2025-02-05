@@ -1,6 +1,7 @@
 import '@/styles/tailwind.css'
 import type { Metadata } from 'next'
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: {
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body className="text-gray-950 antialiased">
       {children}
       <SpeedInsights />
+      <Analytics />
       </body>
     </html>
   )
